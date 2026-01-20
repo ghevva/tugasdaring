@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Web Server Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghefarah Arkhanza Nurwanda</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ffeef8 0%, #ffcce6 50%, #ffb3d9 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 50px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.3);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-circle {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 10px 30px rgba(255, 20, 147, 0.4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            color: #ff1493;
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.2);
+        }
+
+        .subtitle {
+            color: #ff69b4;
+            font-size: 18px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .info-card {
+            background: linear-gradient(135deg, #ffe6f0 0%, #ffd6e8 100%);
+            border-radius: 20px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 5px solid #ff1493;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.2);
+        }
+
+        .info-label {
+            color: #ff1493;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .info-value {
+            color: #c71585;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .decorative-line {
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #ff69b4, transparent);
+            margin: 30px 0;
+        }
+
+        .quote-section {
+            margin-top: 35px;
+            padding: 25px;
+            background: linear-gradient(135deg, #fff0f8 0%, #ffe6f2 100%);
+            border-radius: 15px;
+            border: 2px solid #ffb3d9;
+        }
+
+        .quote-text {
+            color: #c71585;
+            font-size: 16px;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .quote-author {
+            color: #ff69b4;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+
+            .profile-circle {
+                width: 120px;
+                height: 120px;
+                font-size: 50px;
+            }
+
+            .quote-text {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Welcome to My Web Server</h1>
-  <p>This website is deployed using GitHub Pages and GitHub Actions.</p>
-  <p>Student: SMK SIJA Grade XI</p>
+    <div class="container">
+        <div class="profile-circle">GA</div>
+        
+        <h1>Ghefarah Arkhanza Nurwanda</h1>
+        <p class="subtitle">Student at SMK Telkom Sidoarjo</p>
+        
+        <div class="decorative-line"></div>
+        
+        <div class="info-card">
+            <div class="info-label">Status</div>
+            <div class="info-value">Vocational High School Student</div>
+        </div>
+        
+        <div class="info-card">
+            <div class="info-label">School</div>
+            <div class="info-value">SMK Telkom Sidoarjo</div>
+        </div>
+        
+        <div class="info-card">
+            <div class="info-label">Location</div>
+            <div class="info-value">Sidoarjo, East Java</div>
+        </div>
+        
+        <div class="quote-section">
+            <p class="quote-text">"Things we lost have a way of coming back to us in the end, if not always in the way we expect"</p>
+            <p class="quote-author">— Luna Lovegood</p>
+        </div>
+    </div>
 </body>
 </html>
